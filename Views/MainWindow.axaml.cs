@@ -22,6 +22,12 @@ public partial class MainWindow : Window
     private void Button_OnClick(object? sender, RoutedEventArgs e)
     {
         var vm = DataContext as MainWindowViewModel;
-        vm?.Play();
+        vm?.Start();
+    }
+
+    private void Toggle(object? sender, RoutedEventArgs e)
+    {
+        var vm = DataContext as MainWindowViewModel;
+        vm?.MediaPlayer.Pause();
     }
 }

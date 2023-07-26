@@ -18,6 +18,7 @@
         <Panel Height="450" Width="800">
             <avalonia:VideoView  MediaPlayer="{Binding MediaPlayer}" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
         </Panel>
-        <Button Click="Button_OnClick">Play</Button>
+        <Button Click="Button_OnClick">Start</Button>
+        <Button Click="Toggle">Togle</Button>
     </StackPanel>
 </Window>
